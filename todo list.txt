@@ -1,0 +1,9 @@
+//What-to-do list next:
+
+# Add full contents in the index page.
+# Add social media section.
+# Add database to the website.
+# Add effects, color, layout. Fix bugs.
+# Add new *Features* : searching system, Year milestone, etc. 
+# Add contents to database.
+...
