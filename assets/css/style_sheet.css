@@ -1,15 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Indie+Flower|Pacifico|Shadows+Into+Light|Yanone+Kaffeesatz');
 @font-face {
     font-family: AFBA;
     src: url("../AGENCYR.ttf");
 }
-html {
+
+/*Main Properties*/
+
+html{
 	background:url("../img/history.jpg");
-	background-size : cover;
+	background-size : 1263px 670px ;
 	background-repeat: no-repeat;
 	font-family: AFBA;
 }
 
+/*Header Part*/
+
 .op_layer {
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer */
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 	z-index : 1;
 	background-color: rgba(120, 115, 115 , 0.54);
 	position: absolute;
@@ -30,13 +41,16 @@ html {
 	width: 100%;
 	height: 60px;
 }
+#bar-pos{
+	position: fixed;
+	z-index: 1;
+}
 
 .homo_link {
 	position :  fixed;
 	font-size : 30px;
-	top : 9px;
-	left : 58%;
-	position: fixed;
+	top : 10px;
+	left : 56.5%;
 }
 
 .bar a {
@@ -55,12 +69,11 @@ html {
 	color: white;
 	font-size: 90px;
 	text-shadow: 2px 2px #1B1B1B;
-	margin-top : 10%;
+	margin-top : 16%;
 }
 
 .search_form {
 	text-align : center;
-	margin-top: 20px;
 }
 
 .search_form #search_bar {
@@ -120,4 +133,18 @@ html {
 	.bar a {
 		margin-left : 35px; 
 	}
+}
+
+/*Content Part*/
+
+.content{
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../img/border.png) 30 stretch;
+	-webkit-border-image: url(../img/border.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(../img/border.png) 30 stretch; /* Opera 11-12.1 */
+	margin: 300px 30px;
 }
