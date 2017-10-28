@@ -6,29 +6,51 @@
 
 /*Main Properties*/
 
-html{
-	background:url("../img/history.jpg");
-	background-size : 1263px 670px ;
-	background-repeat: no-repeat;
-	font-family: AFBA;
+::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
 }
 
-/*Header Part*/
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
 
-.op_layer {
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;	
+}
+
+html{
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer */
 	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
 	-webkit-user-select: none; /* Chrome, Safari, and Opera */
 	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
-	z-index : 1;
-	background-color: rgba(120, 115, 115 , 0.54);
+}
+
+/*Header Part*/
+
+.wrapper{
+	background-color: rgba(31, 31, 31, 1);
+	z-index: 1;
+}
+.op_layer {
 	position: absolute;
-	width: 100%;
-	height: 100%;
 	top: 0;
     left: 0;
+	background:url("../img/history.jpg") ;
+	background-repeat: no-repeat;
+	font-family: AFBA;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+	max-height: 700px;
 }
+
 .logo{
 	margin: left;
 	font-size: 50px;
@@ -65,6 +87,7 @@ html{
 }
 
 .text_hir {
+	z-index: 1;
 	text-align : center;
 	color: white;
 	font-size: 90px;
@@ -135,9 +158,13 @@ html{
 	}
 }
 
+input[type=submit] {
+}
+
 /*Content Part*/
 
 .content{
+	position: absolute;
 	text-align: center;
 	font-size: 35px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -146,5 +173,5 @@ html{
     border-image: url(../img/border.png) 30 stretch;
 	-webkit-border-image: url(../img/border.png) 30 stretch; /* Safari 3.1-5 */
     -o-border-image: url(../img/border.png) 30 stretch; /* Opera 11-12.1 */
-	margin: 300px 30px;
+	margin: 60% 30px;
 }
