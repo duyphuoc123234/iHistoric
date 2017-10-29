@@ -86,35 +86,51 @@ html{
 	color : #FFFFFF;
 }
 
-.text_hir {
+.text {
 	z-index: 1;
 	text-align : center;
 	color: white;
-	font-size: 90px;
 	text-shadow: 2px 2px #1B1B1B;
 	margin-top : 16%;
+	font-size: 50px;
+	text-transform: uppercase;
 }
 
-.search_form {
-	text-align : center;
+.search {
+	margin: auto;
+	width: 650px;
+    position: relative;
 }
 
-.search_form #search_bar {
-	width : 500px;
-	height : 30px;
-	padding : 10px;
-	font-family: AFBA;
-	font-size : 25px;
-	border: solid 1px #707070;
-	box-shadow: 0 0 5px 1px #f0ecec;
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #363636;
+    padding: 5px;
+    height: 20px;
+    border-radius: 4px;
+    outline: none;
 }
 
-.search_form #search_button {
-	font-family: AFBA;
-	font-size: 25px;
-	padding: 10px 30px;
+.searchTerm:focus{
+    color: #00B4CC;
+}
+.btn-search{
+	font-family: 'Abel', sans-serif;
+	margin: 10px 0px 0px 270px;
+	padding: 10px 15px 11px !important;
+	font-size: 20px !important;
+	background-color: #2D2D2D;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #151515;
 	cursor: pointer;
-	margin: 15px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
 @media (max-width: 575px) {  }
@@ -158,20 +174,66 @@ html{
 	}
 }
 
-input[type=submit] {
-}
-
 /*Content Part*/
 
 .content{
-	position: absolute;
+	margin-top: 20%;
+}
+#intro{
 	text-align: center;
 	font-size: 35px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	border: 10px solid transparent;
-    padding: 15px;
+    padding: 20px;
     border-image: url(../img/border.png) 30 stretch;
 	-webkit-border-image: url(../img/border.png) 30 stretch; /* Safari 3.1-5 */
-    -o-border-image: url(../img/border.png) 30 stretch; /* Opera 11-12.1 */
-	margin: 60% 30px;
+    -o-border-image: url(../img/border.png) 30 stretch; /* Opera 11-12.1 */	
+}
+
+#features-wrap{
+	margin-top: 100px;
+    text-transform: uppercase;	
+	text-align: center;
+	font-family: "Indie Flower", sans-serif;
+	font-size: 60px;
+}
+
+.img-homepage{
+	width: 280px;
+	height: 280px;	
+	display: inline-block;
+	margin: 0px 45px;
+}
+
+.img-homepage:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+	transition: all 0.4s ease;
+    background-color: SlateGray;
+    position:relative;
+    opacity: 0.5;
+    -moz-opacity: 20%;
+    -webkit-opacity: 20%;
+    z-index: 2;
+}
+
+#img1:hover{
+	content: url(../img/box1-hover.png);
+}
+
+#img2:hover{
+	content: url(../img/box2-hover.png);
+}
+
+#img3:hover{
+	content: url(../img/box3-hover.png);
+}
+
+p{
+	letter-spacing: 1px;
+}
+
+span{
+	color: red;
 }
