@@ -1,13 +1,19 @@
 <?php
+
 	require 'assets/php/database.php';
-	
+	require 'assets/php/util.php';
 	if(init_db()) {
-		
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<title>iHistoric</title>
+		<title><?php
+			if(isset($_GET['search'])){
+				echo $_GET["search"].' - Search iHistoric';
+			}else {
+				echo "iHistoric";
+			}
+		?></title>
         <meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +33,15 @@
     <![endif]-->
     </head>
 	<body>
-	
+	<?php 
+		if(isset($_GET['search'])) {
+			$test_s = "Hi there my name pootis penser hir boy yea nigsu : froud";
+			
+			$test_obj  = searchForWords($test_s,$_GET['search']);
+			echo $test_obj->n_words;
+			
+		}else {
+	?>
 <!--   Header   -->
 
 	<div class="op_layer">
@@ -45,10 +59,10 @@
 		<div class="text">
 			<h1>Welcome you to iHistoric!</h1>
 		</div>
-		<form action="#" method="#">
+		<form action=<?php echo $_SERVER['SCRIPT_NAME']; ?> method="get">
 		<div class="search">
       <input type="text" name="search" class="searchTerm" placeholder="What are you looking for?">
-      <input type="submit" name="Search" value="Search" class="btn-search" />
+      <input type="submit"  value="Search" class="btn-search" />
 		</div>
 		</form>
 
@@ -72,7 +86,7 @@
 </html>
 
 <?php
-
+	}
 	}else {
 		
 		echo 'We are init every databases ,Please refresh web site to finish If you didnt get a Error!';
