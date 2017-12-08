@@ -43,7 +43,7 @@ else { // Email doesn't already exist in a database, proceed...
 
         // Send registration confirmation link (verify.php)
         $to      = $email;
-        $subject = 'Account Verification ( clevertechie.com )';
+        $subject = 'Account Verification ( iHistoric.com )';
         $message_body = '
         Hello '.$first_name.',
 
@@ -51,7 +51,7 @@ else { // Email doesn't already exist in a database, proceed...
 
         Please click this link to activate your account:
 
-        http://localhost/login-system/verify.php?email='.$email.'&hash='.$hash;  
+        http://'.$_SERVER['SERVER_NAME'].'/account/verify.php?email='.$email.'&hash='.$hash;  
 
         mail( $to, $subject, $message_body );
 

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 	require 'assets/php/database.php';
 	require 'assets/php/util.php';
 	if(init_db()) {
@@ -53,7 +53,13 @@
 				<a href="#">Home</a> 
 				<a href="#">Articles</a>
 				<a href="#">Support</a>
-				<a href ="#">Log In or Sign Up</a>
+				<?php
+					if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) { // Check if user logged in to change Log/sign in label with user first name
+						echo '<a href ="account/profile.php">'.$_SESSION['first_name'].'</a>';
+					}else {
+						echo '<a href ="account/">Log In or Sign Up</a>';
+					}
+				?>
 			</div>
 		</div>
 		<div class="text">

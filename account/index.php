@@ -1,6 +1,6 @@
 <?php 
 /* Main page with two forms: sign up and log in */
-require 'db.php';
+require '../assets/php/connection_db.php';
 session_start();
 ?>
 <!DOCTYPE html>
@@ -107,9 +107,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
       </div><!-- tab-content -->
       
 </div> <!-- /form -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../assets/js/jquery.min.js"></script> <!-- Changed to correct dir of jquery script -->
 
-    <script src="js/index.js"></script>
+    <script src="js/index_s.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php 
 /* Reset your password form, sends reset.php password link */
-require 'db.php';
+require '../assets/php/connection_db.php';
 session_start();
 
 // Check if form submitted with method="post"
