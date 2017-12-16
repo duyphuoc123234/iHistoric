@@ -6,7 +6,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sign-Up/Login Form</title>
+  <title>Login | Sign Up</title>
   <?php include 'css/css.html'; ?>
 </head>
 
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
       <div class="tab-content">
 
          <div id="login">   
-          <h1>Welcome Back!</h1>
+          <h1>Log In | Welcome</h1>
           
           <form action="index.php" method="post" autocomplete="off">
           

@@ -58,12 +58,12 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
     <h1>Reset Your Password</h1>
 
     <form action="forgot.php" method="post">
-     <div class="field-wrap">
-      <label>
-        Email Address<span class="req">*</span>
-      </label>
-      <input type="email"required autocomplete="off" name="email"/>
-    </div>
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off" name='email' />
+          </div>
     <button class="button button-block"/>Reset</button>
     </form>
   </div>

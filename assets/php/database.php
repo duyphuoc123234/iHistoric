@@ -8,6 +8,7 @@
 		global $mysqli;
 		
 		if(!(file_exists($file_url))) {
+
 			
 			$lessons_query = 'CREATE TABLE `i_historic`.`lessons` ( `id` INT(8) NOT NULL AUTO_INCREMENT , `title` VARCHAR(255) NOT NULL , `content` TEXT NOT NULL , `date` DATETIME  NOT NULL   , 
 			`keywords` VARCHAR(255) NOT NULL , `by` VARCHAR(255) NOT NULL , PRIMARY KEY (id)) ENGINE = InnoDB;';

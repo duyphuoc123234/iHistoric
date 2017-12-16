@@ -31,6 +31,9 @@ $(document).ready(function() {
 	},15000);
 
 //var imgs = Array("history_1.jpg",
+	
+
+	//var imgs = Array("history_1.jpg",
 //					"history.jpg",
 //					"history_2.jpg");
 //					

@@ -6,7 +6,7 @@
 		
 		public $_words_arr;
 		
-		public $n_words = 0;
+		public $n_words = 1;
 		
 		// function __construct() {
 			

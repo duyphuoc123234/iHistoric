@@ -60,7 +60,8 @@ else {
           <p><?= $email ?></p>
           
           <a href="../"><button class="button button-block" name="logout"/>Home</button></a> <br> <!-- Add Main page button -->
-		  <a href="logout.php"><button class="button button-block" name="logout"/>Log out</button></a>
+		  <a href="logout.php"><button class="button button-block" name="logout"/>Log out</button></a> <br>
+		  <a href="mail.php"><button class="button button-block" name="logout"/>Resend Link</button></a>
     </div>
     
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

@@ -177,7 +177,7 @@ html{
 /*Content Part*/
 
 .content{
-	margin-top: 20%;
+	margin-top: 40%;
 }
 #intro{
 	text-align: center;
@@ -236,4 +236,8 @@ p{
 
 span{
 	color: red;
+}
+
+.footer{
+	color: aqua;
 }
