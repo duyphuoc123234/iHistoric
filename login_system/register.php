@@ -51,7 +51,7 @@ else { // Email doesn't already exist in a database, proceed...
 
         Please click this link to activate your account:
 
-        http://'.$_SERVER['SERVER_NAME'].'/account/verify.php?email='.$email.'&hash='.$hash;  
+        http://'.$_SERVER['SERVER_NAME'].'/login_system/verify.php?email='.$email.'&hash='.$hash;  
 
         mail( $to, $subject, $message_body );
 
