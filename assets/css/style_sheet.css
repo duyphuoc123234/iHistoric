@@ -177,7 +177,7 @@ html{
 /*Content Part*/
 
 .content{
-	margin-top: 40%;
+	margin-top: 20%;
 }
 #intro{
 	text-align: center;
@@ -238,6 +238,34 @@ span{
 	color: red;
 }
 
-.footer{
-	color: aqua;
+.footer-r{
+	background-color: #1d1c1c;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font-family: AFBA;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.footer-r .footer-company-name{
+	color:  #ffffff;
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer-r .footer-links{
+	list-style: none;
+	font-size: 24px;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer-r .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
 }
