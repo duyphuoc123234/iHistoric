@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Indie+Flower|Pacifico|Shadows+Into+Light|Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
 @font-face {
     font-family: AFBA;
     src: url("../AGENCYR.ttf");
@@ -29,6 +30,7 @@ html{
 	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
 	-webkit-user-select: none; /* Chrome, Safari, and Opera */
 	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+	cursor: url(../Cursor/Blueness.cur), pointer;
 }
 
 /*Header Part*/
@@ -63,16 +65,21 @@ html{
 	width: 100%;
 	height: 60px;
 }
-#bar-pos{
-	position: fixed;
-	z-index: 1;
-}
-
-.homo_link {
+#menu ul {
+	list-style-type: none;
+	text-align: center;
 	position :  fixed;
 	font-size : 30px;
 	top : 10px;
-	left : 56.5%;
+	left : 56.5%; 
+}
+#menu ul li{
+	color: #FFFFFF;
+	display: inline;
+}
+
+#dropdown{
+	margin-left: 5px;
 }
 
 .bar a {
@@ -107,13 +114,15 @@ html{
     width: 100%;
     border: 3px solid #000000;
     padding: 5px;
-    height: 20px;
+    height: 40px;
     border-radius: 4px;
     outline: none;
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
 }
 
 .searchTerm:focus{
-    color: #00B4CC;
+    color: #171717;
 }
 .btn-search{
 	font-family: 'Abel', sans-serif;
@@ -124,13 +133,9 @@ html{
 	font-weight: bold;
 	color: #ffffff;
 	border-radius: 5px;	
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	border: 1px solid #151515;
 	cursor: pointer;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
 @media (max-width: 575px) {  }
@@ -177,7 +182,7 @@ html{
 /*Content Part*/
 
 .content{
-	margin-top: 20%;
+	margin: 20% 5% 10% 5%;
 }
 #intro{
 	text-align: center;
@@ -238,6 +243,7 @@ span{
 	color: red;
 }
 
+/*Footer Part*/
 .footer-r{
 	background-color: #1d1c1c;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -265,7 +271,15 @@ span{
 }
 
 .footer-r .footer-links a{
-	display:inline-block;
+	display:inline;
 	text-decoration: none;
-	color: inherit;
+	color: inherit
+}
+#footer_logo{
+	margin-top: -30px;
+	margin-bottom: -30px;
+}
+#footer_logo_truong{
+	margin-bottom: 20px;
+	margin-top: -30px;
 }

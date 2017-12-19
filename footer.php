@@ -12,6 +12,8 @@
 					·
 					<a href="#">Contact</a>
 				</p>
+				<img id="footer_logo" src="assets/img/logo.png" />
+				<img id="footer_logo_truong" src="assets/img/logo-truong.png" width="120px" height="120px" />
 				<p class="footer-company-name">iHistoric &copy; 2018</p>
 			</div>
 		
