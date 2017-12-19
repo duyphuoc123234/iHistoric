@@ -2,6 +2,9 @@
 /* Main page with two forms: sign up and log in */
 require '../assets/php/connection_db.php';
 session_start();
+if(isset($_SESSION['email']) or isset($_SESSION['hash']) ) {
+	header("location: ../index.php ");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -110,6 +113,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
   <script src="../assets/js/jquery.min.js"></script> <!-- Changed to correct dir of jquery script -->
 
     <script src="js/index_s.js"></script>
-
 </body>
 </html>

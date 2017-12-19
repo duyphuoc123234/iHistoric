@@ -20,7 +20,7 @@ session_start();
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Zeroual_Aymene">
-		<link rel="stylesheet" type="text/css" href="assets/css/style_sheet.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style_sheet.css?v=1.0">
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<script src="assets/js/jquery.min.js"></script>
@@ -45,23 +45,7 @@ session_start();
 <!--   Header   -->
 
 	<div class="op_layer">
-		<div class="bar" id="bar-pos" >
-		<div class="logo">
-			<a href="#">iHISTORIC</a>
-			</div>
-			<div class="homo_link">
-				<a href="#">Home</a> 
-				<a href="#">Articles</a>
-				<a href="#">Support</a>
-				<?php
-					if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) { // Check if user logged in to change Log/sign in label with user first name
-						echo '<a href ="login_system/profile.php">'.$_SESSION['first_name'].'</a>';
-					}else {
-						echo '<a href ="login_system/index.php">Log In or Sign Up</a>';
-					}
-				?>
-			</div>
-		</div>
+		<?php require("header.php");?>
 		<div class="text">
 			<h1>Welcome you to iHistoric!</h1>
 		</div>
@@ -88,6 +72,9 @@ session_start();
 				</div>
 
 		</div>
+		
+		<?php require("footer.php"); ?>
+		
     </body>
 </html>
 
