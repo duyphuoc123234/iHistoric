@@ -20,9 +20,9 @@ session_start();
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Zeroual_Aymene">
-		<link rel="stylesheet" type="text/css" href="assets/css/style_sheet.css?v=1.0">
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/style_sheet.css?v=<?php echo time(); ?>" />
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/index-script.js"></script>
 		<script src="assets/js/jquery-ui.min.js"></script>

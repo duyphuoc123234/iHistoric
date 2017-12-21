@@ -290,11 +290,7 @@ span{
 	text-decoration: none;
 	color: inherit
 }
-#footer_logo{
-	margin-top: -30px;
-	margin-bottom: -30px;
+#footer_logo, #footer_logo_truong{
+	margin-top: -10px;
 }
-#footer_logo_truong{
-	margin-bottom: 20px;
-	margin-top: -30px;
-}
+
