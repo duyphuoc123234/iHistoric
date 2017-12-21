@@ -65,5 +65,48 @@
 		
 		return 0 ;
 	}
+	function getUserAvatar($folder,$hash) {
+		
+		$op = 0;
+		
+		if($hash === null) {
+			
+			$op = 0;
+			
+		}
+		
+		$defult = 'default.jpg';
+		
+		$avatar_url = $folder . $hash ;
+		
+		$avatar_full_url ;
+		
+		$ex = Array('.png','.jpeg','.jpg','.gif');
+		
+		foreach($ex as $a_t) {
+			
+			if(file_exists($avatar_url . $a_t)) {
+				
+				$avatar_full_url = $avatar_url . $a_t;
+				
+				$op = 1;
+				
+				break;
+				
+			}
+			
+		}
+		 
+		if($op === 1) {
+			
+			return $avatar_full_url ;
+			
+		}else {
+			
+			return $folder . $defult;
+			
+		}
+		
+	}
 	
 ?>
