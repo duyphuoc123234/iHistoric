@@ -38,6 +38,13 @@ if ($uploadOk == 0) {
 	header("location: error.php");    
 // if everything is ok, try to upload file
 } else {
+	$ext = Array('.png','.gif','.jpeg','.jpg');
+	foreach($ext as $f_d){
+		if(file_exists($target_dir . $_SESSION['hash'] . $f_d)) {
+			unlink($target_dir . $_SESSION['hash'] . $f_d);
+			break;
+		}
+	}
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "Your imag updated without error , Please wait 2 sec !";
 		header( "refresh:2;url=profile.php" );
