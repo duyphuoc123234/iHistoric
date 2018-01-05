@@ -1,7 +1,6 @@
 <?php
 /* Displays user information and some useful messages */
 session_start();
-require '../assets/php/util.php';
 $able_to = false;
 // Check if user is logged in using the session variable
 if ( $_SESSION['logged_in'] != 1 ) {
@@ -22,23 +21,12 @@ else {
   <meta charset="UTF-8">
   <title>Welcome <?= $first_name.' '.$last_name ?></title>
   <?php include 'css/css.html'; ?>
-  <style>
-	.avatar {
-		
-		border-radius: 50%;
-		width : 120px;
-		height: 120px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto
-	}
-  </style>
 </head>
 
 <body>
   <div class="form">
 
-        <?php echo '<img class="avatar" src="'. getUserAvatar('avatars/',$_SESSION['hash']).'">' 	?>
+          <h1>Welcome</h1>
           
           <p>
           <?php 
@@ -78,9 +66,7 @@ else {
           
           <h2><?php echo $first_name.' '.$last_name; ?></h2>
           <p><?= $email ?>  <br>
-		  </p><?php 
-		  if($active) {
-		  echo '
+		  </p>
 			<form action="avatar.php" method="post" enctype="multipart/form-data">
 				<div class="field-wrap">
 					<h2>Upload your avatar:</h2>
@@ -88,10 +74,6 @@ else {
 					<!--<input type="submit" value="Upload Image" name="submit">-->
 					<button class="button button-block" style =" width:50%; font-size: 20px; margin: 10px 0px 0px 120px; " name="login" />Upload Image</button>
 				</div>
-			</form>
-					';
-				}
-				?>
 			</form>
           <a href="../"><button class="button button-block" name="logout"/>Home</button></a> <br> <!-- Add Main page button -->
 			<?php	
