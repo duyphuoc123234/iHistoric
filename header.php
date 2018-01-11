@@ -3,31 +3,7 @@
 			<a href="#">iHISTORIC</a>
 			</div>
 			<style>
-				.dropdown-content {
-						display: none;
-						position: absolute;
-					
-						background-color: #1d1c1c;
-						padding: 5px;
-						min-width: 160px;
-						box-shadow: 0px 30px 16px 0px rgba(0,0,0,0.2);
-						z-index: 1;
-						margin-left: 350px;
-				}
-				.show {
-					display: block;
-				}
-				.avatar { 
-					border-radius: 50%;
-					height: 40px;
-					width: 40px;
-				}
-				
-				ul, li {
-					list-style-type: none;
-					margin: 0;
-					padding: 0;
-				}
+
 				</style>
 		
 			<div class="homo_link">
@@ -37,7 +13,7 @@
 				<?php
 					if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) { // Check if user logged in to change Log/sign in label with user first name
 						echo '
-						<a href="#" class="dropbtn"> '.$_SESSION['first_name'].' <img id="dropdown" src="assets/img/dropdown.png" width="15px" height="15px">	
+						<a href="#" class="dropbtn"><img class="avatar" src="'. getUserAvatar('login_system/avatars/',$_SESSION['hash']).'"> '.$_SESSION['first_name'].' <img id="dropdown" src="assets/img/dropdown.png" width="15px" height="15px">	
 									<i class="fa fa-caret-down"></i>
 								</a>
 								<div class="dropdown-content" id="drop-down">
@@ -46,7 +22,7 @@
 										<li><a href ="../iHistoric/login_system/logout.php">Log out</a></li>
 									</ul>
 								</div>
-						<img class="avatar" src="'. getUserAvatar('login_system/avatars/',$_SESSION['hash']).'">
+
 						';
 					}else {
 						echo '<a href ="../iHistoric/login_system/index.php">Log In or Sign Up</a>';

@@ -20,18 +20,17 @@ else {
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Welcome <?= $first_name.' '.$last_name ?></title>
+  <title><?= $first_name.' '.$last_name ?></title>
   <?php include 'css/css.html'; ?>
   <style>
-	.avatar {
+	.avatar{
 		
-		border-radius: 50%;
-		width : 120px;
-		height: 120px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto
-	}
+	border-radius: 50%;
+	width : 120px;
+	height: 120px;
+	display: block;
+	margin: 0 auto -5% auto;
+}
   </style>
 </head>
 
